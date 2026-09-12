@@ -1,0 +1,357 @@
+/* General Page Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar {
+    height: 80px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+
+/* Power Logo */
+
+.logo-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.logo-button img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo-button:hover {
+    transform: scale(1.08);
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    border: none;
+    background: transparent;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #f0eaff;
+    color: #6633cc;
+}
+
+.nav-button.active {
+    background-color: #6633cc;
+    color: white;
+}
+
+
+/* Page System */
+
+.page {
+    display: none;
+}
+
+.active-page {
+    display: block;
+}
+
+
+/* Home Hero */
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 500px;
+    padding: 80px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #6633cc;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #6633cc;
+}
+
+.hero-text > p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Main Button */
+
+.main-button {
+    background-color: #6633cc;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: #4f239f;
+    transform: translateY(-2px);
+}
+
+
+/* Energy Card */
+
+.energy-card {
+    background-color: white;
+    width: 330px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.power-symbol {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.energy-card h2 {
+    margin-bottom: 10px;
+}
+
+.energy-card p {
+    color: #666;
+}
+
+
+/* Content Section */
+
+.content-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px 80px;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+
+/* Information Cards */
+
+.info-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.info-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.info-card h3 {
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #666;
+}
+
+
+/* Other Pages */
+
+.page-header {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 30px 40px;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.page-header > p:last-child {
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* Television Section */
+
+.tv-placeholder {
+    max-width: 900px;
+    margin: 20px auto 100px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.tv-placeholder h2 {
+    margin-bottom: 15px;
+}
+
+.tv-placeholder > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.tv-data {
+    display: flex;
+    gap: 20px;
+}
+
+.tv-data div {
+    flex: 1;
+    padding: 25px;
+    background-color: #f5f7fb;
+    border-radius: 12px;
+}
+
+.tv-data strong,
+.tv-data span {
+    display: block;
+}
+
+.tv-data span {
+    margin-top: 8px;
+    color: #6633cc;
+}
+
+
+/* About Section */
+
+.about-card {
+    max-width: 800px;
+    margin: 20px auto 100px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.about-card h2 {
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .info-cards {
+        flex-direction: column;
+    }
+
+    .tv-data {
+        flex-direction: column;
+    }
+
+}
