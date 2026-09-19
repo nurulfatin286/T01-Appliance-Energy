@@ -1,4 +1,6 @@
-/* General Page Styling */
+/* =========================================
+   GENERAL
+========================================= */
 
 * {
     box-sizing: border-box;
@@ -6,352 +8,956 @@
     padding: 0;
 }
 
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f7fb;
+
     color: #222;
+
     line-height: 1.6;
 }
 
 
-/* Navigation Bar */
-
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
-}
+/* =========================================
+   NAVIGATION
+========================================= */
 
 .navbar {
-    height: 80px;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    min-height: 75px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
-    padding: 0 30px;
+
+    padding: 10px 30px;
 }
 
-
-/* Power Logo */
 
 .logo-button {
-    border: none;
     background: none;
+
+    border: none;
+
     cursor: pointer;
+
+    padding: 0;
 }
+
 
 .logo-button img {
     width: 55px;
+
     height: 55px;
+
     object-fit: contain;
+
+    transition: transform 0.2s ease;
 }
 
-.logo-button:hover {
+
+.logo-button:hover img {
     transform: scale(1.08);
 }
 
 
-/* Navigation Links */
-
 .nav-links {
     display: flex;
+
+    align-items: center;
+
     gap: 10px;
 }
 
+
 .nav-button {
     border: none;
+
     background: transparent;
+
     padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    color: #555;
+
     border-radius: 8px;
-    transition: 0.3s;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    color: #444;
+
+    transition: all 0.2s ease;
 }
 
+
 .nav-button:hover {
-    background-color: #f0eaff;
+    background: #f0ebff;
+
     color: #6633cc;
 }
 
+
 .nav-button.active {
-    background-color: #6633cc;
+    background: #6633cc;
+
     color: white;
 }
 
 
-/* Page System */
+/* =========================================
+   PAGE SYSTEM
+========================================= */
 
 .page {
     display: none;
 }
+
 
 .active-page {
     display: block;
 }
 
 
-/* Home Hero */
+/* =========================================
+   HOME PAGE
+========================================= */
 
 .hero {
     max-width: 1200px;
-    margin: auto;
-    min-height: 500px;
-    padding: 80px 30px;
+
+    margin: 0 auto;
+
+    padding: 90px 30px 70px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 60px;
 }
+
 
 .hero-text {
     max-width: 650px;
 }
 
+
 .small-title {
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
     color: #6633cc;
-    margin-bottom: 15px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
 }
+
 
 .hero h1 {
     font-size: 52px;
+
     line-height: 1.1;
-    margin-bottom: 25px;
+
+    margin: 15px 0 25px;
 }
+
 
 .hero h1 span {
     color: #6633cc;
 }
 
-.hero-text > p {
-    font-size: 18px;
+
+.hero-text > p:not(.small-title) {
     color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
     margin-bottom: 30px;
 }
 
 
-/* Main Button */
-
 .main-button {
-    background-color: #6633cc;
-    color: white;
     border: none;
-    padding: 15px 25px;
+
+    background: #6633cc;
+
+    color: white;
+
+    padding: 14px 25px;
+
     border-radius: 8px;
-    font-size: 16px;
+
+    font-size: 15px;
+
     cursor: pointer;
-    transition: 0.3s;
+
+    transition: all 0.2s ease;
 }
 
+
 .main-button:hover {
-    background-color: #4f239f;
+    background: #5125a8;
+
     transform: translateY(-2px);
 }
 
 
-/* Energy Card */
-
 .energy-card {
-    background-color: white;
-    width: 330px;
-    padding: 40px;
+    width: 320px;
+
+    padding: 40px 30px;
+
+    background: white;
+
     border-radius: 20px;
+
     text-align: center;
+
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+
 .power-symbol {
     font-size: 60px;
+
     margin-bottom: 15px;
 }
+
 
 .energy-card h2 {
     margin-bottom: 10px;
 }
 
+
 .energy-card p {
     color: #666;
+
+    line-height: 1.6;
 }
 
 
-/* Content Section */
+/* =========================================
+   HOME CONTENT
+========================================= */
 
 .content-section {
     max-width: 1200px;
-    margin: auto;
-    padding: 50px 30px 80px;
-    text-align: center;
+
+    margin: 0 auto;
+
+    padding: 60px 30px 90px;
 }
 
+
 .content-section h2 {
-    font-size: 32px;
+    font-size: 34px;
+
     margin-bottom: 15px;
 }
 
+
 .section-intro {
-    max-width: 700px;
-    margin: 0 auto 40px;
+    max-width: 750px;
+
     color: #666;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
 }
 
-
-/* Information Cards */
 
 .info-cards {
-    display: flex;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
     gap: 25px;
-    justify-content: center;
 }
+
 
 .info-card {
-    background-color: white;
+    background: white;
+
     padding: 30px;
-    border-radius: 15px;
-    flex: 1;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease;
 }
 
-.info-card h3 {
-    margin-bottom: 12px;
+
+.info-card:hover {
+    transform: translateY(-5px);
 }
+
+
+.info-card h3 {
+    margin-bottom: 10px;
+}
+
 
 .info-card p {
     color: #666;
+
+    line-height: 1.6;
 }
 
 
-/* Other Pages */
+/* =========================================
+   TELEVISION HERO
+========================================= */
 
-.page-header {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-    padding: 80px 30px 40px;
-}
+.tv-hero {
+    max-width: 1200px;
 
-.page-header h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
+    margin: 0 auto;
 
-.page-header > p:last-child {
-    color: #666;
-    font-size: 18px;
-}
+    padding: 80px 30px 60px;
 
-
-/* Television Section */
-
-.tv-placeholder {
-    max-width: 900px;
-    margin: 20px auto 100px;
-    padding: 40px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-    text-align: center;
-}
-
-.tv-placeholder h2 {
-    margin-bottom: 15px;
-}
-
-.tv-placeholder > p {
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.tv-data {
     display: flex;
-    gap: 20px;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
 }
 
-.tv-data div {
-    flex: 1;
-    padding: 25px;
-    background-color: #f5f7fb;
-    border-radius: 12px;
+
+.tv-hero-text {
+    max-width: 680px;
 }
 
-.tv-data strong,
-.tv-data span {
-    display: block;
+
+.tv-hero-text h1 {
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin: 12px 0 20px;
 }
 
-.tv-data span {
-    margin-top: 8px;
+
+.tv-hero-text h1 span {
     color: #6633cc;
 }
 
 
-/* About Section */
+.tv-hero-text > p:last-child {
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+.tv-hero-card {
+    min-width: 280px;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+
+.tv-icon {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+
+.tv-hero-card h2 {
+    margin-bottom: 10px;
+}
+
+
+.tv-hero-card p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   TELEVISION SECTIONS
+========================================= */
+
+.tv-section {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 60px 30px;
+}
+
+
+.section-title {
+    max-width: 750px;
+
+    margin-bottom: 40px;
+}
+
+
+.section-title h2 {
+    font-size: 34px;
+
+    margin: 10px 0 15px;
+}
+
+
+.section-title > p:last-child {
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   AUDIENCE
+========================================= */
+
+.audience-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.audience-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease;
+}
+
+
+.audience-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.audience-icon {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+.audience-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.audience-card p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   INSIGHT CARDS
+========================================= */
+
+.insight-card {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    margin-bottom: 35px;
+
+    display: flex;
+
+    gap: 25px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.insight-number {
+    min-width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #6633cc;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+
+.insight-content {
+    flex: 1;
+}
+
+
+.question-label {
+    color: #6633cc;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+
+.insight-content h3 {
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   CHART IMAGES
+========================================= */
+
+.chart-container {
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.story-chart {
+    width: 100%;
+
+    max-width: 750px;
+
+    height: auto;
+
+    display: block;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   FINDING BOX
+========================================= */
+
+.finding-box {
+    background: #f5f1ff;
+
+    border-left: 5px solid #6633cc;
+
+    padding: 20px 25px;
+
+    border-radius: 10px;
+}
+
+
+.finding-box strong {
+    display: block;
+
+    color: #6633cc;
+
+    margin-bottom: 8px;
+}
+
+
+.finding-box p {
+    color: #444;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CONCLUSION
+========================================= */
+
+.tv-conclusion {
+    max-width: 1140px;
+
+    margin: 20px auto 70px;
+
+    padding: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #6633cc,
+        #8b5bd6
+    );
+
+    color: white;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.conclusion-icon {
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #6633cc;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+.tv-conclusion .small-title {
+    color: white;
+}
+
+
+.tv-conclusion h2 {
+    margin: 8px 0 12px;
+
+    font-size: 30px;
+}
+
+
+.tv-conclusion p:last-child {
+    line-height: 1.7;
+
+    max-width: 800px;
+}
+
+
+/* =========================================
+   BUYING TIPS
+========================================= */
+
+.tv-tips {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 30px 30px 90px;
+}
+
+
+.tips-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.tip-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.tip-card span {
+    display: inline-block;
+
+    color: #6633cc;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.tip-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.tip-card p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.page-header {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 80px 30px 40px;
+}
+
+
+.page-header h1 {
+    font-size: 48px;
+
+    margin: 12px 0 20px;
+}
+
+
+.page-header > p:last-child {
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
 
 .about-card {
-    max-width: 800px;
-    margin: 20px auto 100px;
-    background-color: white;
+    max-width: 900px;
+
+    margin: 0 auto 100px;
+
+    background: white;
+
     padding: 40px;
+
     border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
+
 
 .about-card h2 {
     margin-bottom: 20px;
 }
 
+
 .about-card p {
     color: #666;
+
+    line-height: 1.7;
+
     margin-bottom: 15px;
 }
 
 
-/* Footer */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
-    background-color: #222;
-    color: white;
+    background: #202020;
+
+    color: #ddd;
+
     text-align: center;
-    padding: 25px 20px;
+
+    padding: 30px 20px;
+
     font-size: 14px;
 }
+
 
 footer p {
     margin: 5px 0;
 }
 
 
-/* Mobile Responsive Design */
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     .navbar {
-        padding: 0 15px;
+        padding: 10px 15px;
     }
 
-    .nav-button {
-        padding: 10px;
-        font-size: 14px;
+
+    .nav-links {
+        gap: 3px;
     }
+
+
+    .nav-button {
+        padding: 10px 12px;
+
+        font-size: 13px;
+    }
+
 
     .hero {
         flex-direction: column;
-        text-align: center;
-        padding: 50px 20px;
+
+        align-items: stretch;
+
+        padding-top: 60px;
     }
 
+
     .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .energy-card {
+        width: 100%;
+    }
+
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tv-hero {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .tv-hero-text h1 {
         font-size: 38px;
     }
 
-    .info-cards {
+
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .insight-card {
         flex-direction: column;
     }
 
-    .tv-data {
+
+    .insight-number {
+        width: 55px;
+    }
+
+
+    .tv-conclusion {
+        margin-left: 20px;
+
+        margin-right: 20px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
+    }
+
+
+    .tv-hero,
+    .tv-section,
+    .tv-tips {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .tv-hero-text h1 {
+        font-size: 32px;
+    }
+
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+
+    .tv-conclusion {
         flex-direction: column;
+
+        align-items: flex-start;
     }
 
 }

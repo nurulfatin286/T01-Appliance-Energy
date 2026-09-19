@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Appliance Energy Consumption</title>
 
     <link rel="stylesheet" href="style.css">
@@ -10,44 +12,82 @@
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
     <header>
+
         <nav class="navbar">
 
             <!-- Power Logo -->
             <button class="logo-button" onclick="showPage('home')">
-                <img src="images/PowerIcon.png" alt="Power Logo">
+
+                <img
+                    src="images/PowerIcon.png"
+                    alt="Power Logo"
+                >
+
             </button>
 
-            <!-- Navigation Menu -->
+
+            <!-- Navigation Links -->
             <div class="nav-links">
-                <button class="nav-button active" id="home-nav" onclick="showPage('home')">
+
+                <button
+                    class="nav-button active"
+                    id="home-nav"
+                    onclick="showPage('home')"
+                >
                     Home
                 </button>
 
-                <button class="nav-button" id="televisions-nav" onclick="showPage('televisions')">
+                <button
+                    class="nav-button"
+                    id="televisions-nav"
+                    onclick="showPage('televisions')"
+                >
                     Televisions
                 </button>
 
-                <button class="nav-button" id="about-nav" onclick="showPage('about')">
+                <button
+                    class="nav-button"
+                    id="about-nav"
+                    onclick="showPage('about')"
+                >
                     About Us
                 </button>
+
             </div>
 
         </nav>
+
     </header>
 
 
-    <!-- Main Content -->
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
     <main>
 
-        <!-- Home Page -->
-        <section id="home" class="page active-page">
+
+        <!-- =========================
+             HOME PAGE
+        ========================== -->
+
+        <section
+            id="home"
+            class="page active-page"
+        >
 
             <div class="hero">
+
                 <div class="hero-text">
 
-                    <p class="small-title">AUSTRALIAN MARKET</p>
+                    <p class="small-title">
+                        AUSTRALIAN MARKET
+                    </p>
 
                     <h1>
                         Appliance Energy
@@ -59,58 +99,90 @@
                         and learn about energy consumption in Australian homes.
                     </p>
 
-                    <button class="main-button" onclick="showPage('televisions')">
+                    <button
+                        class="main-button"
+                        onclick="showPage('televisions')"
+                    >
                         Explore Televisions
                     </button>
 
                 </div>
 
+
                 <div class="energy-card">
-                    <div class="power-symbol">⚡</div>
-                    <h2>Energy Matters</h2>
+
+                    <div class="power-symbol">
+                        ⚡
+                    </div>
+
+                    <h2>
+                        Energy Matters
+                    </h2>
+
                     <p>
-                        Understanding appliance energy consumption
-                        can help households make more energy-efficient choices.
+                        Understanding appliance energy consumption can help
+                        households make more energy-efficient choices.
                     </p>
+
                 </div>
+
             </div>
 
 
-            <!-- Information Cards -->
             <div class="content-section">
 
-                <h2>Appliance Energy Consumption</h2>
+                <h2>
+                    Appliance Energy Consumption
+                </h2>
 
                 <p class="section-intro">
                     Household appliances contribute to electricity use.
-                    Factors such as appliance type, power rating and
-                    hours of use can affect overall energy consumption.
+                    Factors such as appliance type, power rating and hours
+                    of use can affect overall energy consumption.
                 </p>
+
 
                 <div class="info-cards">
 
                     <div class="info-card">
-                        <h3>⚡ Power Usage</h3>
+
+                        <h3>
+                            ⚡ Power Usage
+                        </h3>
+
                         <p>
                             Appliances with higher power ratings generally
                             use more electricity when operating.
                         </p>
+
                     </div>
 
+
                     <div class="info-card">
-                        <h3>💡 Energy Efficiency</h3>
+
+                        <h3>
+                            💡 Energy Efficiency
+                        </h3>
+
                         <p>
                             Energy-efficient appliances can help reduce
                             electricity consumption over time.
                         </p>
+
                     </div>
 
+
                     <div class="info-card">
-                        <h3>🏠 Australian Homes</h3>
+
+                        <h3>
+                            🏠 Australian Homes
+                        </h3>
+
                         <p>
                             Understanding household energy use can help
                             consumers make informed appliance choices.
                         </p>
+
                     </div>
 
                 </div>
@@ -120,45 +192,574 @@
         </section>
 
 
-        <!-- Televisions Page -->
-        <section id="televisions" class="page">
 
-            <div class="page-header">
-                <p class="small-title">APPLIANCE CATEGORY</p>
+        <!-- =========================
+             TELEVISIONS PAGE
+        ========================== -->
 
-                <h1>Television Energy Consumption</h1>
+        <section
+            id="televisions"
+            class="page"
+        >
 
-                <p>
-                    Explore example television energy consumption data
-                    for appliances available in the Australian market.
-                </p>
+
+            <!-- Television Introduction -->
+
+            <div class="tv-hero">
+
+                <div class="tv-hero-text">
+
+                    <p class="small-title">
+                        AUSTRALIAN TELEVISION MARKET
+                    </p>
+
+                    <h1>
+                        Television Energy
+                        <span>Insights</span>
+                    </h1>
+
+                    <p>
+                        Explore insights from an Australian Government
+                        dataset on television energy use. These findings
+                        help consumers understand TV technologies, screen
+                        sizes, brands and energy consumption when choosing
+                        a television.
+                    </p>
+
+                </div>
+
+
+                <div class="tv-hero-card">
+
+                    <div class="tv-icon">
+                        📺
+                    </div>
+
+                    <h2>
+                        TV Energy Insights
+                    </h2>
+
+                    <p>
+                        Simple visual information to help Australian
+                        consumers make smarter TV choices.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="tv-placeholder">
 
-                <h2>Television Energy Data</h2>
 
-                <p>
-                    This section will contain television energy consumption
-                    information and data visualisations.
-                </p>
+            <!-- Audience -->
 
-                <div class="tv-data">
+            <div class="tv-section">
 
-                    <div>
-                        <strong>LED TV</strong>
-                        <span>Example: 80 W</span>
+                <div class="section-title">
+
+                    <p class="small-title">
+                        OUR AUDIENCE
+                    </p>
+
+                    <h2>
+                        Who is this information for?
+                    </h2>
+
+                </div>
+
+
+                <div class="audience-grid">
+
+
+                    <div class="audience-card">
+
+                        <div class="audience-icon">
+                            🇦🇺
+                        </div>
+
+                        <h3>
+                            Australian Consumers
+                        </h3>
+
+                        <p>
+                            Australian consumers who are interested
+                            in buying a new television.
+                        </p>
+
                     </div>
 
-                    <div>
-                        <strong>QLED TV</strong>
-                        <span>Example: 120 W</span>
+
+                    <div class="audience-card">
+
+                        <div class="audience-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Energy-Conscious Buyers
+                        </h3>
+
+                        <p>
+                            Consumers looking for affordable,
+                            energy-efficient and good-sized TVs.
+                        </p>
+
                     </div>
 
-                    <div>
-                        <strong>OLED TV</strong>
-                        <span>Example: 150 W</span>
+
+                    <div class="audience-card">
+
+                        <div class="audience-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Simple Visual Insights
+                        </h3>
+
+                        <p>
+                            Users who prefer simple visual information
+                            rather than technical details.
+                        </p>
+
                     </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Data Story -->
+
+            <div class="tv-section">
+
+                <div class="section-title">
+
+                    <p class="small-title">
+                        DATA STORY
+                    </p>
+
+                    <h2>
+                        TV Energy Insights
+                    </h2>
+
+                    <p>
+                        The charts below present findings from an
+                        Australian Government dataset on television
+                        energy use.
+                    </p>
+
+                </div>
+
+
+
+                <!-- CHART 1 -->
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        01
+                    </div>
+
+
+                    <div class="insight-content">
+
+                        <p class="question-label">
+                            QUESTION 1
+                        </p>
+
+                        <h3>
+                            What TV screen technologies are available?
+                        </h3>
+
+
+                        <div class="chart-container">
+
+                            <img
+                                src="images/chart1.png"
+                                alt="Pie chart showing TV screen technologies"
+                                class="story-chart"
+                            >
+
+                        </div>
+
+
+                        <div class="finding-box">
+
+                            <strong>
+                                Key finding
+                            </strong>
+
+                            <p>
+                                Most TVs in Australia are LCD LED,
+                                while OLED is less common.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CHART 2 -->
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        02
+                    </div>
+
+
+                    <div class="insight-content">
+
+                        <p class="question-label">
+                            QUESTION 2
+                        </p>
+
+                        <h3>
+                            What screen sizes are most common?
+                        </h3>
+
+
+                        <div class="chart-container">
+
+                            <img
+                                src="images/chart2.png"
+                                alt="Chart showing common TV screen sizes"
+                                class="story-chart"
+                            >
+
+                        </div>
+
+
+                        <div class="finding-box">
+
+                            <strong>
+                                Key finding
+                            </strong>
+
+                            <p>
+                                65-inch is the most common size,
+                                followed by mid-range sizes around
+                                42–55 inches.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CHART 3 -->
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        03
+                    </div>
+
+
+                    <div class="insight-content">
+
+                        <p class="question-label">
+                            QUESTION 3
+                        </p>
+
+                        <h3>
+                            Which brands dominate the market?
+                        </h3>
+
+
+                        <div class="chart-container">
+
+                            <img
+                                src="images/chart3.png"
+                                alt="Bar chart showing television brands and number of models"
+                                class="story-chart"
+                            >
+
+                        </div>
+
+
+                        <div class="finding-box">
+
+                            <strong>
+                                Key finding
+                            </strong>
+
+                            <p>
+                                Kogan, LG, and Samsung dominate the
+                                market with the largest number of models.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CHART 4 -->
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        04
+                    </div>
+
+
+                    <div class="insight-content">
+
+                        <p class="question-label">
+                            QUESTION 4
+                        </p>
+
+                        <h3>
+                            Which screen types use the least power?
+                        </h3>
+
+
+                        <div class="chart-container">
+
+                            <img
+                                src="images/chart4.png"
+                                alt="Chart comparing television screen power consumption"
+                                class="story-chart"
+                            >
+
+                        </div>
+
+
+                        <div class="finding-box">
+
+                            <strong>
+                                Key finding
+                            </strong>
+
+                            <p>
+                                LCD TVs consume the least power,
+                                while OLED uses slightly more.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CHART 5 -->
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        05
+                    </div>
+
+
+                    <div class="insight-content">
+
+                        <p class="question-label">
+                            QUESTION 5
+                        </p>
+
+                        <h3>
+                            How does screen size affect power use?
+                        </h3>
+
+
+                        <div class="chart-container">
+
+                            <img
+                                src="images/chart5.png"
+                                alt="Scatter plot showing the relationship between screen size and power use"
+                                class="story-chart"
+                            >
+
+                        </div>
+
+
+                        <div class="finding-box">
+
+                            <strong>
+                                Key finding
+                            </strong>
+
+                            <p>
+                                Larger TVs use more power.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CHART 6 -->
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        06
+                    </div>
+
+
+                    <div class="insight-content">
+
+                        <p class="question-label">
+                            QUESTION 6
+                        </p>
+
+                        <h3>
+                            Do larger TVs mean worse star ratings?
+                        </h3>
+
+
+                        <div class="chart-container">
+
+                            <img
+                                src="images/chart6.png"
+                                alt="Scatter plot showing the relationship between star rating and screen size"
+                                class="story-chart"
+                            >
+
+                        </div>
+
+
+                        <div class="finding-box">
+
+                            <strong>
+                                Key finding
+                            </strong>
+
+                            <p>
+                                Star ratings are fairly distributed;
+                                bigger TVs can still be efficient.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Conclusion -->
+
+            <div class="tv-conclusion">
+
+                <div class="conclusion-icon">
+                    ✓
+                </div>
+
+
+                <div>
+
+                    <p class="small-title">
+                        CONCLUSION
+                    </p>
+
+                    <h2>
+                        Making a smarter TV choice
+                    </h2>
+
+                    <p>
+                        When choosing a TV, balance size, brand,
+                        and efficiency. A 55-inch LED TV is common
+                        and energy-smart.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Buying Tips -->
+
+            <div class="tv-tips">
+
+                <div class="section-title">
+
+                    <p class="small-title">
+                        BUYING TIPS
+                    </p>
+
+                    <h2>
+                        Things to consider when choosing a TV
+                    </h2>
+
+                </div>
+
+
+                <div class="tips-grid">
+
+
+                    <div class="tip-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Consider screen size
+                        </h3>
+
+                        <p>
+                            Choose a screen size that suits your
+                            viewing space and personal needs.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Compare energy use
+                        </h3>
+
+                        <p>
+                            Consider energy consumption when
+                            comparing different television technologies.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Compare different brands
+                        </h3>
+
+                        <p>
+                            Compare brands, technologies and models
+                            before making your final choice.
+                        </p>
+
+                    </div>
+
 
                 </div>
 
@@ -167,33 +768,52 @@
         </section>
 
 
-        <!-- About Us Page -->
-        <section id="about" class="page">
+
+        <!-- =========================
+             ABOUT US PAGE
+        ========================== -->
+
+        <section
+            id="about"
+            class="page"
+        >
 
             <div class="page-header">
-                <p class="small-title">ABOUT THE PROJECT</p>
 
-                <h1>About Us</h1>
+                <p class="small-title">
+                    ABOUT THE PROJECT
+                </p>
+
+                <h1>
+                    About Us
+                </h1>
 
                 <p>
-                    This website was developed as part of COS30045 to
-                    demonstrate the use of HTML, CSS, JavaScript and GitHub.
+                    This website was developed as part of COS30045
+                    to demonstrate the use of HTML, CSS, JavaScript
+                    and GitHub.
                 </p>
+
             </div>
+
 
             <div class="about-card">
 
-                <h2>Our Website</h2>
+                <h2>
+                    Our Website
+                </h2>
 
                 <p>
                     The purpose of this website is to provide a simple
-                    demonstration of appliance energy consumption in the
-                    Australian market.
+                    demonstration of appliance energy consumption in
+                    the Australian market.
                 </p>
 
                 <p>
-                    The website provides information about energy use and
-                    creates a foundation for future data visualisations.
+                    The website provides information about television
+                    energy use and presents data visualisations to help
+                    users understand different TV technologies, sizes,
+                    brands and energy consumption.
                 </p>
 
             </div>
@@ -203,20 +823,30 @@
     </main>
 
 
-    <!-- Footer -->
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
+
         <p>
-            © 2026 Nurul Fatin Natassya | Appliance Energy Consumption
+            © 2026 Nurul Fatin | Appliance Energy Consumption
         </p>
 
         <p>
-            GenAI acknowledgement: Generative AI tools were used to assist
-            with code development and content creation.
+            GenAI acknowledgement:
+            Generative AI tools were used to assist with code
+            development and content creation.
         </p>
+
     </footer>
 
+
+    <!-- JavaScript -->
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
